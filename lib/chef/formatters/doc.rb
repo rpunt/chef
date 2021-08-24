@@ -365,17 +365,17 @@ class Chef
 
       # Called when compliance profile loading starts
       def profiles_load_start
-        puts_line("Loading Inspec profile files:")
+        puts_line("Loading #{Inspec::Dist::PRODUCT_NAME} profile files:")
       end
 
       # Called when compliance input loading starts
       def inputs_load_start
-        puts_line("Loading Inspec input files:")
+        puts_line("Loading #{Inspec::Dist::PRODUCT_NAME} input files:")
       end
 
       # Called when compliance waiver loading starts
       def waivers_load_start
-        puts_line("Loading Inspec waiver files:")
+        puts_line("Loading #{Inspec::Dist::PRODUCT_NAME} waiver files:")
       end
 
       # Called when a compliance profile is found in a cookbook by the cookbook_compiler
